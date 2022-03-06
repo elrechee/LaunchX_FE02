@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Comprar Pasteles Chidos</Title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        table{
+            text-align: right;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            table-layout: initial;
+            color: rgb(213, 123, 146);
+        }
+        header {
+        background-color: rgb(255, 192, 207) ;
+        text-align: right;
+        font-size: 35px;
+        color: white;
+    }
+    footer {
+            background-color: rgb(255, 192, 207);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<header>
+    <a href="./PInicial.html"><img src="./images/logo.png" alt="Logo Pasteles Chidos" width="150px"></a>
+</header>
+
+<body>
+    <form action="./PInicial.html" id="form1" method="post">
+        <br>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="telefono">Telefono:</label><br>
+        <input type="tel" name="telefono" id="telefono" maxlength="10"><br><br>
+        <label for="correo">Correo elctrónico:</label><br>
+        <input type="email" name="correo" id="correo"><br><br>
+         <table >
+             <tr>
+                 <th>Elige los Sabores que quieras</th>
+                 <th>Añade lo que quieras</th>
+             </tr>
+             <tr>
+                 <th>
+                    
+                    <label for="sabor1">Chocolate</label>
+                    <input type="checkbox" id="sabor1" name="sabor1" value="Chocolate"><br>
+                    <label for="sabor2">Fresa</label>
+                    <input type="checkbox" id="sabor2" name="sabor2" value="Fresa"><br>
+                    <label for="sabor3">Vainilla</label>
+                    <input type="checkbox" id="sabor3" name="sabor3" value="Vainilla"><br>
+                    <label for="sabor4">Plátano</label>
+                    <input type="checkbox" id="sabor4" name="sabor4" value="platano"><br>
+                    <label for="sabor5">Coco</label>
+                    <input type="checkbox" id="sabor5" name="sabor5" value="Coco"><br>
+                    <label for="sabor6">Mole Poblano</label>
+                    <input type="checkbox" id="sabor6" name="sabor6" value="MolePoblano"><br>
+                    <label for="sabor7">Limón</label>
+                    <input type="checkbox" id="sabor7" name="sabor7" value="Limon"><br>
+                    <label for="sabor8">Zarzamora</label>
+                    <input type="checkbox" id="sabor" name="sabor8" value="Zarzamora"><br>
+                 </th>
+                 <th>
+                     <table>
+                         <tr>
+                             <th>
+                                <label for="ex20_1">Nueces</label>
+                                <input type="checkbox" id="ex20_1" name="ex20_1" value="Nueces"><br>
+                                <label for="ex20_2">Cacahuates</label>
+                                <input type="checkbox" id="ex20_2" name="ex20_2" value="Cacahuates"><br>
+                                <label for="ex20_3">Chispas de Colores</label>
+                                <input type="checkbox" id="ex20_3" name="ex20_3" value="CColores"><br>
+                                <label for="ex20_4">Chispas de Chocolate</label>
+                                <input type="checkbox" id="ex20_4" name="ex20_4" value="CChoco"><br>
+                                <label for="ex20_5">Cerezas</label>
+                                <input type="checkbox" id="ex20_5" name="ex20_5" value="Cerezas"><br>
+                             </th>
+                             <th>
+                                <label for="ex20_1">Fresas</label>
+                                <input type="checkbox" id="sabor1" name="ex20_1" value="Fresas"><br>
+                                <label for="ex20_2">Kiwi</label>
+                                <input type="checkbox" id="ex20_2" name="ex20_2" value="Kiwi"><br>
+                                <label for="ex20_3">Cubierta de chocolate</label>
+                                <input type="checkbox" id="ex20_3" name="ex20_3" value="CuChoco"><br>
+                                <label for="ex20_4">Almendras</label>
+                                <input type="checkbox" id="ex20_4" name="ex20_4" value="Almendras"><br>
+                                <label for="ex20_5">Tortilla</label>
+                                <input type="checkbox" id="ex20_5" name="ex20_5" value="Tortilla"><br>
+                             </th>
+                         </tr>
+                     </table>
+                 </th>
+             </tr>
+         </table>
+
+         <p>Danos una breve explicacion de como quieres que luzca tu pastel:</p>
+        <textarea name="comentarios" rows="10" cols="90">Ej. Las fresas en el centro</textarea><br>
+        <input type="submit" value="Pagar" onclick="alert('Gracias por tu Compra\n<3');">
+        
+    </form>
+</body>
